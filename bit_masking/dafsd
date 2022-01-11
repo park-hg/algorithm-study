@@ -1,0 +1,15 @@
+for _ in range(m):  
+    func = sys.stdin.readline()
+    if func[0] == 'add':
+        add(int(func[1]))
+    elif func[0] == 'remove':
+        remove(int(func[1]))
+    elif func[0] == 'check':
+        print(check(int(func[1])))
+    elif func[0] == 'toggle':
+        toggle(int(func[1]))
+    elif func[0] == 'all':
+        S = all()
+    elif func[0] == 'empty':
+        S = empty()
+    print(S)
